@@ -1,0 +1,117 @@
+
+/* Custom Navigation */
+.navbar-nav{
+	float: right;
+	background-color: #FA4D1B;
+}
+.navbar-default{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+.navbar-nav > li:last-child a{
+	padding-right:0px;
+}
+
+/* Mega Menu */
+li.mega-menu{
+	position: static;
+}
+.mega-menu .dropdown-menu{
+	left: 0;
+	right: 0;
+	max-width: 100% !important;
+	min-width: 100% !important;
+	padding: 20px 20px;
+	margin-left: 0px !important;
+}
+
+.navbar.navbar-bg-light{
+	background-color: #fa4d1b;
+}
+.navbar.navbar-bg-light .navbar-nav > li > a{
+	color: #222;
+}
+/* Set Navbar Background-color dark */
+.navbar.navbar-bg-dark{
+	background-color: #222;
+}
+.navbar.navbar-bg-dark .navbar-nav > li > a{
+	color: #fff;
+}
+/* Set Navbar Background-transparent */
+.navbar-transparent{
+	background-color: transparent
+}
+.navbar-transparent .navbar-nav > li > a{
+	color: #fff;
+}
+.navbar-semi-transparent{
+	background-color: rgba(255, 255, 255, 0.8)
+}
+.navbar-transparent .navbar-nav > li > a{
+	color: #222;
+}
+.navbar-transparent{
+	border-color: transparent;
+}
+
+.navbar-nav .sub-arrow, .navbar-nav .collapsible .sub-arrow{
+	display: none;
+}
+.navbar-nav ul .sub-arrow{
+	display: inline-block;
+	border: 0px;
+	font-size: 0px;
+}
+.navbar-nav ul .sub-arrow:after{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 14px;
+	font-family:FontAwesome;
+	content:"\f105";
+	height: 20px;
+	width: 20px;
+}
+.has-submenu{
+	position: relative;
+}
+.navbar-nav > li > a{
+	line-height: 40px;
+}
+
+/* Dark Header */
+
+.dark-header .navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+header.dark-header .navbar-form input {
+		background: #171717;
+		border: 0 none;
+}
+/* Transparent Header With Top bar */
+.header-topbar-with-header  .navbar.navbar-fixed-top{
+	top: 45px;
+}
+.header-topbar-with-header  .is-sticky .navbar.navbar-fixed-top{
+	top: 0px;
+}
+header.semi-dark-header .navbar-form input {
+		background: rgba(2, 2, 2, 0.1);
+		border: 0 none;
+}
+header .is-sticky  .sticky-light-to-dark  .navbar-form input {
+		background: rgba(2, 2, 2, 0.1);
+		border: 0 none;
+}
+header  .sticky-dark-to-light  .navbar-form input {
+		background: rgba(2, 2, 2, 0.1);
+		border: 0 none;
+}
+header .is-sticky  .sticky-dark-to-light  .navbar-form input {
+		background: #fff;
+		border: 0 none;
+}

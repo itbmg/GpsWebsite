@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <!-- Site made with Mobirise Website Builder v2.6.1, http://mobirise.com -->
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v2.6.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/discover-mobile-350x350-16.png" type="image/x-icon">
+    <meta name="description" content="Free Gotracking">
+    <title>Gotracking</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/mobirise/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise-slider/style.css">
+    <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <script src="assets/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="assets/jquery/jquery-1.4.4.js" type="text/javascript"></script>
+    <style type="text/css" id="jarallax-clip-0">
+        #jarallax-container-0
+        {
+            clip: rect(0px 1343px 378px 0);
+            clip: rect(0px, 1343px, 378px, 0);
+        }
+    </style>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                $("#ago").css("color", "#ffffff");
+                $("#ahome").css("color", "#ffffff");
+                $("#ahome1").css("color", "#ffffff");
+                $("#ahome2").css("color", "#ffffff");
+                $("#ahome3").css("color", "#ffffff");
+                $("#ahome4").css("color", "#ffffff");
+                $("#ahome5").css("color", "#ffffff");
+                $("#ahome6").css("color", "#ffffff");
+                $("#ahome7").css("color", "#ffffff");
+            } else {
+                if (st < lastScrollTop) {
+                    if (st < 100) {
+                        loadancher();
+                    }
+                    else {
+                        $("#ago").css("color", "#ffffff");
+                        $("#ahome").css("color", "#ffffff");
+                        $("#ahome1").css("color", "#ffffff");
+                        $("#ahome2").css("color", "#ffffff");
+                        $("#ahome3").css("color", "#ffffff");
+                        $("#ahome4").css("color", "#ffffff");
+                        $("#ahome5").css("color", "#ffffff");
+                        $("#ahome6").css("color", "#ffffff");
+                        $("#ahome7").css("color", "#ffffff");
+                    }
+                }
+                else if (st > lastScrollTop) {
+                    $("#ago").css("color", "#ffffff");
+                    $("#ahome").css("color", "#ffffff");
+                    $("#ahome1").css("color", "#ffffff");
+                    $("#ahome2").css("color", "#ffffff");
+                    $("#ahome3").css("color", "#ffffff");
+                    $("#ahome4").css("color", "#ffffff");
+                    $("#ahome5").css("color", "#ffffff");
+                    $("#ahome6").css("color", "#ffffff");
+                    $("#ahome7").css("color", "#ffffff");
+                }
+                else {
+                    $("#ago").css("color", "#28262b");
+                    $("#ahome").css("color", "#28262b");
+                    $("#ahome1").css("color", "#28262b");
+                    $("#ahome2").css("color", "#28262b");
+                    $("#ahome3").css("color", "#28262b");
+                    $("#ahome4").css("color", "#28262b");
+                    $("#ahome5").css("color", "#28262b");
+                    $("#ahome6").css("color", "#28262b");
+                    $("#ahome7").css("color", "#28262b");
+                }
+            }
+            lastScrollTop = st;
+        });
+
+        $(function () {
+            load_home();
+          
+        });
+        function loadancher() {
+            
+        }
+        function load_home() {
+            document.getElementById("divfo").innerHTML = '<object type="text/html" data="footer.html" style="width:100%; height:100%;" ></object>';
+        }
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+
+        function callHandler(d, s, e) {
+            $.ajax({
+                url: 'EmployeeManagementHandler.axd',
+                data: d,
+                type: 'GET',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                async: true,
+                cache: true,
+                success: s,
+                error: e
+            });
+        }
+        function CallHandlerUsingJson(d, s, e) {
+            d = JSON.stringify(d);
+            d = d.replace(/&/g, '\uFF06');
+            d = d.replace(/#/g, '\uFF03');
+            d = d.replace(/\+/g, '\uFF0B');
+            d = d.replace(/\=/g, '\uFF1D');
+            $.ajax({
+                type: "GET",
+                url: "EmployeeManagementHandler.axd?json=",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: d,
+                async: true,
+                cache: true,
+                success: s,
+                error: e
+            });
+        }
+        function btn_send_click() {
+            var name = document.getElementById('txt_name').value;
+            var phno = document.getElementById('txtphno').value;
+            var email = document.getElementById('txt_email').value;
+            var remarks = document.getElementById('txt_remarks').value;
+            var data = { 'op': 'btn_sendfeedback_click', 'name': name, 'phno': phno, 'email': email, 'remarks': remarks };
+            var s = function (msg) {
+                if (msg) {
+                    if (msg.length > 0) {
+                        alert("Successfully Sended Your Query");
+                    }
+                }
+                else {
+                }
+            };
+            var e = function (x, h, e) {
+            }; $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+            callHandler(data, s, e);
+        }
+
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFK425" height="0" width="0"
+        style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PFK425"></script>
+    <script>        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFK425');</script>
+    <!-- End Google Tag Manager -->
+    <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse"
+        id="menu-20">
+        <div class="mbr-navbar__section mbr-section">
+            <div class="mbr-section__container container" style="width:1300px !important; padding:0px !important;">
+                <div class="mbr-navbar__container" style="height:84px !important;">
+                    <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand" style="width:19% !important;">
+                        <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline"><span class="mbr-brand__logo">
+                            <a href=""><img src="assets/images/gotracking.jpg" style="height:40px; width:40px;" /></a></span><span class="mbr-brand__name"><a id="ago" href="" class="mbr-brand__name text-white"
+                                href="">GoTracking</a></span> </span>
+                    </div>
+                    <div class="mbr-navbar__hamburger mbr-hamburger text-white">
+                        <span class="mbr-hamburger__line"></span>
+                    </div>
+                    <div class="mbr-navbar__column mbr-navbar__menu">
+                        <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                            <div class="mbr-navbar__column">
+                                <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
+                                    <li class="mbr-navbar__item"><a id="ahome" class="mbr-buttons__link btn text-white" href="index.html">
+                                        HOME</a></li>
+                                    <li class="mbr-navbar__item"><a id="ahome1" class="mbr-buttons__link btn text-white" href="aboutus.html" >
+                                        ABOUT US</a></li>
+                                 
+                                      <li class="mbr-navbar__item dropdown">
+          <a href="#" id="ahome2" class="mbr-buttons__link btn text-white dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="left: 27px !important;">
+           <li><a href="solutions/fleet-management.html">Fleet Management</a></li>
+            <li role="separator" ></li>
+            <li><a href="Employeetracking.html">Employee Tracking</a></li>
+            <li role="separator" ></li>
+            <li><a href="service.html">School Tracking</a></li>
+            <li role="separator" ></li>
+            <li><a href="cabtracking.html">Gps Cab Tracking System</a></li>
+            <li role="separator" ></li>
+             <li><a href="solutions/smartphone-tablet-apps.html">Mobile Apps</a></li>
+          </ul>
+        </li>
+                                    <li class="mbr-navbar__item"><a id="ahome3" class="mbr-buttons__link btn text-white" href="Products.html">
+                                        PRODUCTS</a></li>
+                                    <li class="mbr-navbar__item"><a id="ahome4" class="mbr-buttons__link btn text-white" href="futures.html">
+                                        FUTURES</a></li>
+                                    <li class="mbr-navbar__item"><a id="ahome5" class="mbr-buttons__link btn text-white" href="Contactus.html">
+                                        CONTACT US</a></li>
+                                    <li class="mbr-navbar__item dropdown">
+          <a href="#" id="ahome6" class="mbr-buttons__link btn text-white dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="left: 27px !important;">
+           <li><a href="case-studies.htm">Case Studies</a></li>
+            <li role="separator" ></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li role="separator" ></li>
+          </ul>
+        </li>
+                                </ul>
+                            </div>
+
+                            <div class="mbr-navbar__column">
+                                <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
+                                    <li class="mbr-navbar__item"><a id="ahome7" style="border: 2px solid grey;" target="_blank" class="mbr-buttons__link btn text-white"
+                                        href="http://Gps.GoTracking.co.in">LOGIN</a></li></ul>
+                            </div>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-2 simple col-1 col-undefined mbr-parallax-background mbr-after-navbar"
+        id="content5-77" style="background-image: none; position: relative; background-attachment: scroll;
+        background-size: auto;"><div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; visibility: hidden; z-index: -100;"><div style="background-position: 50% 50%; background-repeat: no-repeat; background-image: url(assets/images/img3.jpg); position: fixed; top: 0px; left: 0px; width: 1343px; height: 378px; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; background-size: 1343px 898.83px; visibility: visible; transform: translate3d(0px, 0px, 0px);"></div></div>
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);"></div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>The Best GPS tracking solutions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="header3-78">
+    <div class="mbr-section__container container mbr-section__container--first">
+        <div class="mbr-header mbr-header--wysiwyg row">
+            <div class="col-sm-offset-n2">
+                <h4 class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2"><strong style="color: #013364; font-size:24px;">FM 1120 real time  gps tracker</strong> </h4>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="content1-79">
+    <div class="mbr-section__container container mbr-section__container--middle"  style="padding-bottom:0px !important">
+        <div class="row">
+            <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2"><strong style="color: #013364;">Feature list:</strong></div>
+            
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="content1-79">
+    <div class="mbr-section__container container mbr-section__container--middle" style="padding-bottom:0px !important">
+    <br />
+        <div class="row">
+        <table>
+        <tr>
+        <td>
+            <div style="width:100%;" class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2">
+            <ul>
+            <li>Small and easy to mount case</li>
+            <li>Internal GSM antenna and Internal GPS/GLONASS antenna allow mount FM1120 much easier</li>
+            <li>Real Time tracking</li>
+            </ul>
+            Smart data acquisition – based on time, distance, angle, ignition and I/O events allow to have a precise online tracker.Sending acquired data via GPRS (TCP/IP and UDP/IP protocols)
+            <ul>
+            <li>Smart algorithm of GPRS connections for GPRS traffic saving</li>
+            <li>Operating in roaming networks by preferred GSM providers list</li>
+            <li>Events from I/O elements detection and sending via GPRS or SMS</li>
+            <li>Scheduled 24 coordinates SMS sending when GPRS not available</li>
+            <li>5 geofence zones (rectangular or circle)</li>
+            <li>Auto Geofencing crested for car towing detection and car theft prevention</li>
+            <li>Deep Sleep mode (less than 2 mA power consumption)</li>
+            <li>FOTA (firmware updating via GPRS)</li>
+            <li>3 operational modes (Home, Roaming, Unknown) based on operator</li>
+            </ul>
+            
+            </div>
+                 </td>
+            </div>
+   
+        <td>
+        <img src="assets/images/productsimages/image4.png" style="width:311px;"/>
+        <strong>FM1120</strong>
+        </td>
+        </tr>
+        </table>
+    </div>
+</section>
+    <section class="mbr-section" id="header3-93">
+    <div class="mbr-section__container container mbr-section__container--middle"  style="padding-bottom:0px !important">
+        <div class="row">
+                <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2" ><strong style="color: #013364;"><br><br>Integrated scenarios:</strong></div>
+            </div>
+        </div>
+</section>
+    <section class="mbr-section" id="content1-91">
+    <div class="mbr-section__container container mbr-section__container--middle" style="padding-bottom:0px !important">
+        <div class="row">
+            <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2" style="width:100%;">
+            <table style="width:100%;">
+            <tr>
+            <td>
+            <br />
+          <ul>
+          <li>Over speeding to secure driver and prevent penalties</li>
+          <li>Immobilizer function</li>
+          <li>Authorized driving (1-Wire® iButton ID keys up to 50 iButton keys)use to prevent stealing or indicate drivers</li>
+          <li>Trip start and end detection</li>
+          <li>FM1120 supports remote logs reading</li>
+          </ul>
+          <br />
+          FM1120 supports remote diagnostic logs functionality using GPRS. Possible issues resolving becomes faster.
+          <br />
+          Manufacturer can read logs remotely using SMS/GPRS to diagnose the FM1120 and timely respond to the fault.
+           </td>
+           <td style="width:100px;"></td>
+               <td>
+        <div style="padding: 24px 22px 22px;border: 3px solid #f2f2f2; background-color:#00ffff;">
+                            <div style="font-size: 13px;margin: 0 0 8px;"><a href="#"><span style="COLOR: #013364;font-family:sans-serif;font-weight: 700;font-size: 20px;">GoTracking</span> <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                            <span style="COLOR: #013364;font-family:sans-serif;font-weight: 700;font-size: 16px;"> No 25, Vyshnavi House, TNHB Colony, Korattur, Chennai-80. </span>
+                            <div class="title">
+                            <a href="#" style="COLOR: #013364;font-family:sans-serif;font-weight: 700;font-size: 16px;line-height: 24px; text-decoration:none;">Contact No : +91 (0) 9840025389</a>
+                            </div>
+                            
+                             <div class="title">
+                             <a href="#" style="COLOR: #013364;font-family:sans-serif;font-weight: 700;font-size: 16px;line-height: 24px; text-decoration:none;">Email : it@vyshnavi.in</a>
+                            </div>
+                            </div>
+            </tr>
+            </table>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="header3-93">
+    <div class="mbr-section__container container mbr-section__container--middle"  style="padding-bottom:0px !important">
+        <div class="row">
+                <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2" ><strong style="color: #013364;"><br><br>Specification:</strong></div>
+            </div>
+        </div>
+</section>
+    <section class="mbr-section" id="content1-91">
+    <div class="mbr-section__container container mbr-section__container--middle" style="padding-bottom:0px !important">
+        <div class="row">
+            <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2">
+            <br />
+          <ul>
+          <li>GSM</li>
+          <li>Quad-band 900/1800 MHz; 850/1900 MHz</li>
+          <li>GPRS class 10 (up to 856 kbps)</li>
+          <li>SMS (text/data)</li>
+          <li>GPS/GLONASS</li>
+          <li>NMEA protocol compatible.Messages: GGA, GGL, GSA, GSV, RMC, VTG, TXT</li>
+          <li>32 channel GPS/GLONASS receiver</li>
+          <li>Not less than-160 dBm</li>
+          </ul>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="header3-93">
+    <div class="mbr-section__container container mbr-section__container--middle"  style="padding-bottom:0px !important">
+        <div class="row">
+                <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2" ><strong style="color: #013364;"><br><br>Interface:</strong></div>
+            </div>
+        </div>
+</section>
+    <section class="mbr-section" id="content1-91">
+    <div class="mbr-section__container container mbr-section__container--middle" style="padding-bottom:0px !important">
+        <div class="row">
+            <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2">
+            <br />
+          <ul>
+          <li>1 Digital Input Reserved for ignition Status Monitoring</li>
+          <li>2 Digital Input</li>
+          <li>1 Analog input(10V or 30V range)</li>
+          <li>2 Digital Open-collector Outputs(connecting external relays, LED, buzzers etc.)</li>
+          <li>1 Wire® temperature sensor</li>
+          <li>1 wire® iButton</li>
+          <li>Motion sensor</li>
+          <li>Power supply(+10…+30) V DC</li>
+          <li>Internal GSM antenna</li>
+          <li>Internal GPS/GLONASS antenna</li>
+          <li>Integrated back-up battery</li>
+          </ul>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section" id="header3-93">
+    <div class="mbr-section__container container mbr-section__container--middle"  style="padding-bottom:0px !important">
+        <div class="row">
+                <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2" ><strong style="color: #013364;"><br><br>Dimensions:</strong></div>
+            </div>
+        </div>
+</section>
+    <section class="mbr-section" id="content1-91">
+    <div class="mbr-section__container container mbr-section__container--middle" style="padding-bottom:0px !important">
+        <div class="row">
+            <div class="mbr-article mbr-article--wysiwyg col-sm-8 col-sm-offset-n2">
+            <br />
+          <ul>
+          <li>L(65mm)*W(56,6mm)*H(18,9mm)</li>
+          <li>2 Status LEDs</li>
+          <li>Configuration and firmware upload(FOTA and via cable)</li>
+          </ul>
+        </div>
+    </div>
+</section>
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="testimonials">
+   <div id="divfo" class="row" style="height:600px;">
+   
+   </div>
+   </section>
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+    <script src="assets/jarallax/jarallax.js"></script>
+    <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+    <script src="assets/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/mobirise/js/script.js"></script>
+    <script src="assets/mobirise-gallery/script.js"></script>
+</body>
+</html>

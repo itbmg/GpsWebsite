@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v2.6.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="bootstrap carousel">
+    <link rel="shortcut icon" href="../assets/images/gotracking.jpg" type="image/x-icon">
+    <title>GoTracking</title>
+    <meta name="description" content="GoTracking offers an efficient, effective vehicle tracking system for managing your business fleet. GoTracking Vehicle Tracking Devices deliver real time information on the location, activity and mobile inventory of your vehicles to improve business performance and customer service." />
+    <meta name="keywords" content="The installed GPS Tracking vehicle tracking devices  communicates with number of GPS satellites and monitors the vehicle location, fuel levels, speed and other units (24*7). The information is stored and then transmitted to GoTracking Server." />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../assets/socicon/css/socicon.min.css">
+    <link rel="stylesheet" href="../assets/mobirise/css/style.css">
+    <link rel="stylesheet" href="../assets/mobirise-slider/style.css">
+    <link rel="stylesheet" href="../assets/mobirise-gallery/style.css">
+    <link rel="stylesheet" href="../assets/mobirise/css/mbr-additional.css" type="text/css">
+    <script src="../assets/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../assets/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../assets/jquery/jquery-1.4.4.js" type="text/javascript"></script>
+    <link href="../assets/mouseover.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/Style2.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/isotope.css" />
+    <!--<link type="text/css" rel="stylesheet" href="assets/css/flexslider.css">
+<!--<link href="assets/css/hover.css" rel="stylesheet" type="text/css" />
+<!--<link type="text/css" rel="stylesheet" href="inc/font_awesome/font-awesome.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="assets/css/fractionslider.css">-->
+    <link type="text/css" rel="stylesheet" href="../assets/css/tooltipster%20.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/owl-theme.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/jquery.fancybox.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/creative_theme.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/Style3.css" />
+    <script type="text/javascript" src="../assets/jquery/fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/fancybox.css" media="screen" />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@GoTracking">
+    <meta name="twitter:title" content="GoTracking">
+    <meta name="twitter:description" content="Track Your Business/Home Vehicles using our Highly Efficient GPS Vehicle Tracking System....">
+    <meta name="twitter:image" content="https://twitter.com/gotracking.png">
+    <meta name="twitter:image:alt" content="Vehicle Tracking">
+    <meta property="og:title" content="Gotracking">
+    <meta property="og:type" content="GPS Vehicle tracking">
+    <meta property="og:url" content="http://www.gotracking.co.in/index.html">
+    <meta property="og:image" content="http://www.gotracking.co.in/gotracking.png">
+    <link rel="publisher" href="https://plus.google.com/111791310664634429036" />
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-88579927-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript">
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+
+        function callHandler(d, s, e) {
+            $.ajax({
+                url: 'EmployeeManagementHandler.axd',
+                data: d,
+                type: 'GET',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                async: true,
+                cache: true,
+                success: s,
+                error: e
+            });
+        }
+        function CallHandlerUsingJson(d, s, e) {
+            d = JSON.stringify(d);
+            d = d.replace(/&/g, '\uFF06');
+            d = d.replace(/#/g, '\uFF03');
+            d = d.replace(/\+/g, '\uFF0B');
+            d = d.replace(/\=/g, '\uFF1D');
+            $.ajax({
+                type: "GET",
+                url: "EmployeeManagementHandler.axd?json=",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: d,
+                async: true,
+                cache: true,
+                success: s,
+                error: e
+            });
+        }
+        function btn_send_click() {
+            var name = document.getElementById('txt_name').value;
+            var phno = document.getElementById('txtphno').value;
+            var email = document.getElementById('txt_email').value;
+            var remarks = document.getElementById('txt_remarks').value;
+            var data = { 'op': 'btn_sendfeedback_click', 'name': name, 'phno': phno, 'email': email, 'remarks': remarks };
+            var s = function (msg) {
+                if (msg) {
+                    if (msg.length > 0) {
+                        alert("Successfully Sended Your Query");
+                    }
+                }
+                else {
+                }
+            };
+            var e = function (x, h, e) {
+            }; $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+            callHandler(data, s, e);
+        }
+
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDGYPgYpwZ4ZQCLCAujetDwArlVBC_S9TI&sensor=false"></script>
+    <script type="text/javascript" src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script type="text/javascript" src="../assets/faq%20css/js/jquery-1.4.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".main-header").css('display', 'block');
+            btn_selectmap_click();
+            Bindlocations(locationdata);
+        });
+        var slctdmap = "Google Map";
+        function btn_selectmap_click() {
+            document.getElementById("googleMap").style.display = "block";
+            intializemaps();
+        }
+        var clusteredview = true;
+        var showtags = false;
+        function intializemaps() {
+            if (slctdmap == "Openstreet Map") {
+            }
+            else {
+                var myCenter = new google.maps.LatLng(17.497535, 78.408622);
+                // Add a Home control that returns the user to London
+
+
+                function initialize() {
+                    var mapProp = {
+                        center: myCenter,
+                        zoom: 5,
+                        panControl: true,
+                        panControlOptions: {
+                            position: google.maps.ControlPosition.RIGHT_TOP
+                        },
+                        zoomControl: true,
+                        zoomControlOptions: {
+                            style: google.maps.ZoomControlStyle.LARGE,
+                            position: google.maps.ControlPosition.RIGHT_TOP
+                        },
+                        mapTypeControlOptions: {
+                            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                            position: google.maps.ControlPosition.RIGHT_BOTTOM
+                        },
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    markerClusterer = new MarkerClusterer(map);
+
+                }
+                initialize();
+
+            }
+        }
+
+        // Removes the overlays from the map, but keeps them in the array.
+        function locationclearOverlays() {
+            locationsetAllMap(null);
+        }
+        var map;
+        var openstreetmap;
+        var markersArray = new Array();
+        var markersArrayOSM = new Array();
+        var showlocations = true;
+        var Locationsdata = new Array();
+        var infoWindow = new google.maps.InfoWindow();
+        var geocoding;
+        var locationdata = [];
+
+        locationdata.push({ 'ARANI': 'ARANI', 'latitude': '12.6879807493352', 'longitude': '79.2912353938484', 'Image': 'cc', 'Decription': 'ARANI' });
+        locationdata.push({ 'Krishnagiri': 'Krishnagiri', 'latitude': '12.51363556', 'longitude': '78.21770667', 'Image': 'cc', 'Decription': 'Krishnagiri' });
+        locationdata.push({ 'V.KOTA': 'V.KOTA', 'latitude': '13.00501', 'longitude': '78.49937', 'Image': 'cc', 'Decription': 'V.KOTA' });
+        locationdata.push({ 'Kollagunta ': 'Kollagunta ', 'latitude': '13.3471609761776', 'longitude': '79.4284065595245', 'Image': 'cc', 'Decription': 'Kollagunta ' });
+        locationdata.push({ 'Bomma samudram': 'Bomma samudram', 'latitude': '13.0582530218475', 'longitude': '79.1669851607132', 'Image': 'cc', 'Decription': 'Bomma samudram' });
+        locationdata.push({ 'Tarigonda': 'Tarigonda', 'latitude': '13.6903513436116', 'longitude': '78.6280510502625', 'Image': 'cc', 'Decription': 'Tarigonda' });
+        locationdata.push({ 'Walaja ': 'Walaja ', 'latitude': '12.94890544', 'longitude': '79.37189636', 'Image': 'cc', 'Decription': 'Walaja ' });
+        locationdata.push({ 'SRI KALAHASTRI': 'SRI KALAHASTRI', 'latitude': '13.76003222', 'longitude': '79.7061155599999', 'Image': 'cc', 'Decription': 'SRI KALAHASTRI' });
+        locationdata.push({ 'CS Puram	': 'CS Puram	', 'latitude': '14.6070273255831', 'longitude': '79.981582390213', 'Image': 'cc', 'Decription': 'CS Puram	' });
+        locationdata.push({ 'GUDLUR ': 'GUDLUR ', 'latitude': '15.07187', 'longitude': '79.89619', 'Image': 'cc', 'Decription': 'GUDLUR ' });
+        locationdata.push({ 'GUDIPALLIPADU': 'GUDIPALLIPADU', 'latitude': '14.4527191713922', 'longitude': '80.0505630705566', 'Image': 'cc', 'Decription': 'GUDIPALLIPADU' });
+        locationdata.push({ 'Kavali': 'Kavali', 'latitude': '14.80125', 'longitude': '79.9418900000001', 'Image': 'cc', 'Decription': 'Kavali' });
+        locationdata.push({ 'kondepalli': 'kondepalli', 'latitude': '13.27565', 'longitude': '79.23541', 'Image': 'cc', 'Decription': 'kondepalli' });
+        locationdata.push({ 'KALIGIRI': 'KALIGIRI', 'latitude': '14.8349049881343', 'longitude': '79.6545434231923', 'Image': 'cc', 'Decription': 'KALIGIRI' });
+        locationdata.push({ 'Chintalapudi': 'Chintalapudi', 'latitude': '17.06672444', 'longitude': '80.98382222', 'Image': 'cc', 'Decription': 'Chintalapudi' });
+        locationdata.push({ 'DENDUKURU ': 'DENDUKURU ', 'latitude': '16.89062', 'longitude': '80.3991', 'Image': 'cc', 'Decription': 'DENDUKURU ' });
+        locationdata.push({ 'Nelakondapalli ': 'Nelakondapalli ', 'latitude': '17.10014	', 'longitude': '80.05223', 'Image': 'cc', 'Decription': 'Nelakondapalli ' });
+        locationdata.push({ 'Parvathagiri': 'Parvathagiri', 'latitude': '17.7441630424745', 'longitude': '79.724300418359', 'Image': 'cc', 'Decription': 'Parvathagiri' });
+        locationdata.push({ 'DENDUKURU ': 'DENDUKURU ', 'latitude': '16.89062', 'longitude': '80.3991', 'Image': 'cc', 'Decription': 'DENDUKURU ' });
+        locationdata.push({ 'Nelakondapalli ': 'Nelakondapalli ', 'latitude': '17.10014	', 'longitude': '80.05223', 'Image': 'cc', 'Decription': 'Nelakondapalli ' });
+        locationdata.push({ 'PULLALAPADU ': 'PULLALAPADU', 'latitude': '16.9254215083954', 'longitude': '81.3806705210418', 'Image': 'cc', 'Decription': 'PULLALAPADU' });
+        locationdata.push({ 'Bangalore': 'Bangalore', 'latitude': '13.0293340887701', 'longitude': '77.6294080946655', 'Image': 'cc', 'Decription': 'Bangalore' });
+        locationdata.push({ 'TIRUPATHI ': 'TIRUPATHI ', 'latitude': '13.61822', 'longitude': '79.4249', 'Image': 'cc', 'Decription': 'TIRUPATHI ' });
+        locationdata.push({ 'KANCHIPURAM ': 'KANCHIPURAM ', 'latitude': '12.83309111', 'longitude': '79.71261333', 'Image': 'cc', 'Decription': 'KANCHIPURAM ' });
+        locationdata.push({ 'NELLORE ': 'NELLORE ', 'latitude': '14.43765778', 'longitude': '79.98286222', 'Image': 'cc', 'Decription': 'NELLORE ' });
+        locationdata.push({ 'MADANAPALLE ': 'MADANAPALLE ', 'latitude': '13.55819222', 'longitude': '78.50223111', 'Image': 'cc', 'Decription': 'MADANAPALLE' });
+        locationdata.push({ 'HYDERABAD ': 'HYDERABAD ', 'latitude': '17.3557678563949', 'longitude': '78.6594010502624', 'Image': 'cc', 'Decription': 'HYDERABAD  ' });
+        locationdata.push({ 'warangal ': 'warangal ', 'latitude': '17.24357444', 'longitude': '80.10919111', 'Image': 'cc', 'Decription': 'warangal ' });
+        locationdata.push({ 'Khammam': 'Khammam', 'latitude': '17.2438', 'longitude': '80.13959', 'Image': 'cc', 'Decription': 'Khammam' });
+        locationdata.push({ 'VIJAYAWADA': 'VIJAYAWADA', 'latitude': '16.3852153709255', 'longitude': '80.5333606932372', 'Image': 'cc', 'Decription': 'VIJAYAWADA' });
+        locationdata.push({ 'CHENNAI ': 'CHENNAI ', 'latitude': '13.1079231715373', 'longitude': '80.1866718723279', 'Image': 'cc', 'Decription': 'CHENNAI ' });
+        function Bindlocations(data) {
+            Locationsdata = data;
+            for (var vehicledata in data) {
+                myCenter = new google.maps.LatLng(data[vehicledata].latitude, data[vehicledata].longitude);
+                placeMarkerlocations(myCenter, data[vehicledata].BranchName, data[vehicledata].Image, data[vehicledata].Decription);
+            }
+        }
+        var LocationsArray = new Array();
+        function placeMarkerlocations(location, BranchName, Image, Decription, isplant, radius, vehno) {
+            var marker;
+
+            var lctnicon = "../assets/faq%20css/images/build11.png";
+            if (Image == "cc") {
+                lctnicon = "../assets/faq%20css/images/build10.png";
+            }
+            if (Image == "plant") {
+                lctnicon = "../assets/faq%20css/images/build11.png";
+            }
+            if (Image == "so") {
+                lctnicon = "../assets/faq%20css/images/build12.png";
+            }
+
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                center: location,
+                zoom: 7,
+                title: BranchName,
+                icon: lctnicon
+            });
+            LocationsArray.push(marker);
+
+            var rrr = parseInt(radius, rrr);
+            var circle = new google.maps.Circle({
+                map: map,
+                zoom: 16,
+                radius: rrr,    // 10 miles in metres
+                strokeColor: "#FFffff",
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                strokeWeight: 1,
+                strokeOpacity: 0
+            });
+            circle.bindTo('center', marker, 'position');
+            LocationsArray.push(circle);
+
+            var content = "Location : " + Decription + "<br/>";
+            var infowindow = new google.maps.InfoWindow({
+                content: content
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
+            //}
+        }
+        function deleteOverlaysOSM() {
+            for (i = 0; i < markersArrayOSM.length; i++) {
+                openstreetmap.removeLayer(markersArrayOSM[i]);
+            }
+            markersArrayOSM = [];
+            OSMClusteredMarkers.clearLayers();
+            OSMClusteredMarkers = null;
+            OSMClusteredMarkers = L.markerClusterGroup();
+        }
+        function deleteLocationOverlaysOSM() {
+            for (i = 0; i < OSMLocationsArray.length; i++) {
+                openstreetmap.removeLayer(OSMLocationsArray[i]);
+            }
+            OSMLocationsArray = [];
+        }
+        function popupClear() {
+            while (openstreetmap.popups.length) {
+                openstreetmap.removePopup(openstreetmap.popups[0]);
+            }
+        }
+    </script>
+    <style type="text/css">
+        .top_box
+        {
+            width: 1110px;
+            background: #FFFFFF;
+            font-family: Open Sans;
+            line-height: 26px;
+            font-weight: 300;
+            font-style: normal;
+            color: #41525a;
+            font-size: 17px;
+        }
+        .left
+        {
+            width: 543px;
+            float: left;
+            color: #000000;
+        }
+        .right
+        {
+            width: 487px;
+            float: right;
+            color: #000000;
+        }
+        h2
+        {
+            margin-bottom: 23px;
+            font-size: 36px;
+            letter-spacing: -0.06em;
+            line-height: 38px;
+            padding: 10px 0 0;
+        }
+        h2
+        {
+            font-family: Poppins;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #013364;
+            padding: 0;
+            margin: 0 0 23px;
+            font-size: 45px;
+            line-height: 60px;
+        }
+        h2
+        {
+            text-transform: lowercase;
+        }
+        body .wpb_column > .vc_column-inner > .wpb_wrapper > :last-child
+        {
+            margin-bottom: 0;
+        }
+        .wpb_text_column ul
+        {
+            margin: 0 0 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .wpb_text_column ul li
+        {
+            position: relative;
+            padding: 0 0 0 112px;
+            margin: 13px 0 20px;
+            line-height: 18px;
+            color: #222;
+            border: none;
+            font-family: Poppins;
+            font-size: 13px;
+        }
+        a
+        {
+            color: #6c98e1;
+            text-decoration: none;
+            font-size: 15px;
+            outline: none !important;
+        }
+        a
+        {
+            background-color: transparent;
+        }
+        .line-separator
+        {
+            width: 50px;
+            border-width: 2px 0 0 0;
+            border-style: solid;
+            display: block !important;
+            position: relative;
+            margin-right: auto !important;
+        }
+    </style>
+</head>
+<body>
+    <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse"
+        id="menu-20">
+        <div class="mbr-navbar__section mbr-section">
+            <div class="mbr-section__container container" style="width:1300px !important;">
+                <div class="mbr-navbar__container">
+                    <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand" style="width:19% !important;">
+                        <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline"><span class="mbr-brand__logo">
+                            <a href=""><img src="assets/images/gotracking.jpg" style="height:40px; width:40px;" /></a></span><span class="mbr-brand__name"><a href="" class="mbr-brand__name text-white"
+                                href="">GoTracking</a></span> </span>
+                    </div>
+                    <div class="mbr-navbar__hamburger mbr-hamburger text-white">
+                        <span class="mbr-hamburger__line"></span>
+                    </div>
+                    <div class="mbr-navbar__column mbr-navbar__menu">
+                        <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                            <div class="mbr-navbar__column">
+                                <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html">
+                                        HOME</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="home/Aboutus.html">
+                                        ABOUT US</a></li>
+                                 
+                                      <li class="mbr-navbar__item dropdown">
+          <a href="#" class="mbr-buttons__link btn text-white dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="left: 27px !important;">
+           <li><a href="solutions/fleet-management.html">Fleet Management</a></li>
+            <li role="separator" ></li>
+            <li><a href="Employeetracking.html">Employee Tracking</a></li>
+            <li role="separator" ></li>
+            <li><a href="service.html">School Tracking</a></li>
+            <li role="separator" ></li>
+            <li><a href="cabtracking.html">Gps Cab Tracking System</a></li>
+            <li role="separator" ></li>
+             <li><a href="solutions/smartphone-tablet-apps.html">Mobile Apps</a></li>
+          </ul>
+        </li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="home/Products.html">
+                                        PRODUCTS</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="home/Futures.html">
+                                        FUTURES</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="home/Contactus.html">
+                                        CONTACT US</a></li>
+                                    <li class="mbr-navbar__item dropdown">
+          <a href="#" class="mbr-buttons__link btn text-white dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="left: 27px !important;">
+           <li><a href="case-studies.htm">Case Studies</a></li>
+            <li role="separator" ></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li role="separator" ></li>
+          </ul>
+        </li>
+                                </ul>
+                            </div>
+
+                            <div class="mbr-navbar__column">
+                                <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
+                                    <li class="mbr-navbar__item"><a style="border: 2px solid grey;" target="_blank" class="mbr-buttons__link btn text-white"
+                                        href="http://Gps.GoTracking.co.in">LOGIN</a></li></ul>
+                            </div>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-2 simple col-1 col-undefined mbr-parallax-background mbr-after-navbar"
+        id="content5-77" style="background-image: none; position: relative; background-attachment: scroll;
+        background-size: auto;"><div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; visibility: hidden; z-index: -100;"><div style="background-position: 50% 50%; background-repeat: no-repeat; background-image: url(assets/images/img3.jpg); position: fixed; top: 0px; left: 0px; width: 1343px; height: 378px; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; background-size: 1343px 898.83px; visibility: visible; transform: translate3d(0px, 0px, 0px);"></div></div>
+    <div class="mbr-overlay" style="background-image: url(../assets/images/grand-arche.jpg);"></div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <h3>Fleet-Management</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="top_box" style="position: unset; box-sizing: border-box; width: 1343px;
+        padding-left: 97.5px; padding-right: 152.5px; padding-top: 94px !important; padding-bottom: 50px !important;
+        background-color: #fff !important;">
+        <div class="wpb_wrapper">
+            <div class="left" style="padding-top: 13px;">
+                <h3 style="background-color: rgb(77,106,121); height: 59px; width: 540px; color: white;
+                    font-size: 26px; padding-top: 6px; text-transform: capitalize;">
+                    &nbsp;<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/1062198-200.png" title="Door Opened"
+                        width="40" height="40" />&nbsp;&nbsp;location</h3>
+                <div id="content" style="height: 300px">
+                    <div id="mapcontent">
+                        <div id="div_liveview">
+                            <div id="googleMap" style="top: 477px; bottom: 524px; left: 97px; right: 749px; position: absolute;
+                                background-color: rgb(229, 227, 223); display: block; overflow: hidden; width: 540px;
+                                height: 508px; border: 1px solid;">
+                                <h3>
+                                    location</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="wpb_wrapper">
+                    <div class="vc_custom_heading text_align_left">
+                        <h2 style="text-align: left; font-family: Abril Fatface; font-weight: 400; font-style: normal;">
+                            Our Locations</h2>
+                        <div class="line-separator" style="border-color: #a2cd63; margin-top: 30px; margin-bottom: 23px;">
+                        </div>
+                    </div>
+                    <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                            <p>
+                                We are presently&nbsp;providing services at 30 locations in India, namely:</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li><a href="">Chennai</a></li>
+                                            <li id="menu-item-2287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2287">
+                                                <a href="">Bangalore</a> </li>
+                                            <li id="menu-item-2286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2286">
+                                                <a href="">Tirupati</a></li>
+                                            <li id="menu-item-2285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2285">
+                                                <a href="">Kanchipuram</a></li>
+                                            <li id="menu-item-2284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2284">
+                                                <a href="">Nellore</a></li>
+                                            <li id="menu-item-2298" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Hyderabad</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Warangal</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Khammam</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Vijayawada</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Wyra</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Kuppam</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Kalasthiri</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Parvathagiri</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Pullampeta</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul style="padding-top: 14px;">
+                                            <li><a href="">Arani</a></li>
+                                            <li id="Li1" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2287">
+                                                <a href="">Kaveripatnam</a> </li>
+                                            <li id="Li2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2286">
+                                                <a href="">V.kota</a></li>
+                                            <li id="Li3" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2285">
+                                                <a href="">Kollagunta</a></li>
+                                            <li id="Li4" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2284">
+                                                <a href="">Bommasamuthram</a></li>
+                                            <li id="Li5" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Tarigonda</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Walaja</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">C.s.puram</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Gudlur</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Gudipalli Padu</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Kavali</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Kondepi</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Kaligiri</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2295 current_page_item menu-item-2298">
+                                                <a href="">Chintalapudi</a></li>
+                                            <li><a href="">Dendukuru</a> </li>
+                                            <li><a href="">Nelakondapalli</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts2-90"
+        style="background-color: #002e5b!important; width: 100%;">
+    <div class="mbr-section__container container">
+        <div class="mbr-contacts mbr-contacts--wysiwyg row">
+        <div class="col-sm-6" style="width:30%!important;">
+                <div>
+                    <div class="col-sm-5 col-sm-offset-1" style="width:71% !important;">
+                     <a href="http://www.gotracking.co.in/"> <img src="../assets/images/gotracking.png" alt="Vyshnavi Dairy" style="height:150px;" /></a><br /><br />
+                     <a href="#" style="color: White; text-decoration:underline;font-size: 23px;">
+                         Address </a>
+                         <br />
+                         <a href="http://www.gotracking.co.in/" style="color: White; text-decoration: none;">
+                         www.GoTracking.co.in.</a><br />
+                         <a href="#" style="color: White; text-decoration: none;">
+                         No 25, Vyshnavi House, TNHB Colony, Korattur, Chennai-80, India.</a><br />
+
+                         <a href="#" style="color: White; text-decoration: none;">
+                         Contact : B Varaprasad</a><br />
+                         <a href="http://www.gotracking.co.in/" style="color: White; text-decoration: none;">
+                        +91 9087025937, it@vyshnavi.in</a><br />
+
+                        <br /><br />
+                         <a href="#" style="color: White; text-decoration: none;">
+                         <p>
+                        Copyright (c) 2016 <a href="http://www.gotracking.co.in/" style="color: White; text-decoration: none;">
+                            www.GoTracking.co.in.</a>
+                    </p></a>
+                        
+                    </div>
+                   
+            </div>
+        </div>
+
+        <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-6" style="width:25% !important;padding-top: 44px;">
+            <a href="#" style="color: White; text-decoration:underline;font-size: 33px;">
+                         Locations</a><br /><br />
+                         <table>
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Chennai</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Bangalore</a>
+                         </td>
+                         </tr>
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Tirupati</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Kanchipuram</a>
+                         </td>
+                         </tr>
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Nellore</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Hyderabad</a>
+                         </td>
+                         </tr>
+                         <tr>
+                         <td style="width: 115px;">
+                          <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Warangal</a> 
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Khammam</a> 
+                         </td>
+                         </tr>
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Vijayawada</a>
+                         </td>
+                        <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Wyra</a>
+                         </td>
+                         </tr>
+                         <tr>
+                          <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Kuppam</a>
+                         </td>
+                        <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Kalasthiri</a>
+                         </td>
+                         </tr>
+                         <tr style="display:none;">
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Futures</a> 
+                         </td>
+                         <td>
+                          <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">FAQ'S</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                         </tr>
+                         <tr style="display:none;">
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Clients</a> 
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Blog</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                          <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                         </tr>
+                         <tr style="display:none;">
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Contact Us</a>
+                         </td>
+                         <td>
+                           <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="#testimonials">Test Monials</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                          <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">Home</a>
+                         </td>
+                         <td>
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" target="_blank" href="">About Us</a>
+                         </td>
+                         </tr>
+                         </table>
+                       </div>
+                       
+        <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-6" style="width:30% !important;">
+        <br /><br />
+            <a href="#" style="color: White; text-decoration:underline;font-size: 33px;">
+                         Company</a><br /><br />
+                         <table>
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Home" href="../index.html">Home</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="About Us"  href="../index.html#aboutus">About Us</a>
+                         </td>
+                         </tr>
+                         <tr>
+                         <td style="width: 115px;">
+                          <a style="color: #dfe3ea; text-decoration: none;" title="Solutions" href="../index.html#solutions">Solutions</a> 
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Products"  href="../index.html#products">Products</a> 
+                         </td>
+                         </tr>
+                         
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Futures" href="../index.html#futures">Futures</a> 
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                          <a style="color: #dfe3ea; text-decoration: none;" title="FAQ" target="_blank" href="../faq.html">FAQ'S</a>
+                         </td>
+                         </tr>
+                         <tr>
+                          <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Clients" href="">Clients</a> 
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Blog" href="../blog.html">Blog</a>
+                         </td>
+                         </tr>
+                        
+                         <tr>
+                         <td style="width: 115px;">
+                         <a style="color: #dfe3ea; text-decoration: none;" title="Contact Us" href="../index.html#contactus">Contact Us</a>
+                         </td>
+                         <td style="width: 115px;padding: 13px;">
+                           <a style="color: #dfe3ea; text-decoration: none;" title="Test Monials"  href="../index.html#testimonials">Test Monials</a>
+                         </td>
+                         </tr>
+                         </table>
+          
+    </div>
+
+    <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-8" style="width:46% !important;">
+    <br /><br /><br /><br />
+      <a class="mbr-social-icons__icon socicon-bg-twitter" style="width:35px !important; height:35px !important;"  title="Twitter" target="_blank" href="https://twitter.com/gotracking"><i class="socicon socicon-twitter" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-facebook" style="width:35px !important; height:35px !important;" title="Facebook" target="_blank" href="https://www.facebook.com/GoTracking/?ref=page_internal&mt_nav=0"><i class="socicon socicon-facebook" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-google" style="width:35px !important; height:35px !important;" title="Google+" target="_blank" href="https://plus.google.com/104223238642866610409?prsrc=3"><i class="socicon socicon-google" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-youtube" style="width:35px !important; height:35px !important;" title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCFE6e8jnlC_PERNmTqch94w"><i class="socicon socicon-youtube" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-instagram" style="width:35px !important; height:35px !important;" title="Instagram" target="_blank" href="https://www.instagram.com/gotrackinggps/"><i class="socicon socicon-instagram" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-pinterest" style="width:35px !important; height:35px !important;" title="Pinterest" target="_blank" href="https://in.pinterest.com/gotracking/pins/"><i class="socicon socicon-pinterest" ></i></a>  
+            <a class="mbr-social-icons__icon socicon-bg-linkedin" style="width:35px !important; height:35px !important;" title="LinkedIn" target="_blank" href="https://www.linkedin.com/company/gotracking"><i class="socicon socicon-linkedin" ></i></a> 
+            <a class="mbr-social-icons__icon socicon-bg-android" style="width:35px !important; height:35px !important;" title="Google Play" target="_blank" href="https://play.google.com/store/apps/details?id=io.cordova.myapp532278&hl=en"><i class="socicon socicon-android" ></i></a>
+          
+    </div>
+    </div></div>
+
+</section>
+    <script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/smooth-scroll/SmoothScroll.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+    <script type="text/javascript" src="../assets/jarallax/jarallax.js"></script>
+    <script type="text/javascript" src="../assets/masonry/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../assets/social-likes/social-likes.js"></script>
+    <script type="text/javascript" src="../assets/mobirise/js/script.js"></script>
+    <script type="text/javascript" src="../assets/mobirise-gallery/script.js"></script>
+</body>
+</html>
